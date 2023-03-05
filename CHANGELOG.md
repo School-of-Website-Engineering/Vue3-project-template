@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2023-03-05)
+
+
+### Docs
+
+* **contributor:** contrib-readme-action has updated readme ([307cde8](https://github.com/School-of-Website-Engineering/Vue3-project-template/commit/307cde8e6a5c1aef4f038270e0e8e93f0117ffa1))
+
 ## 1.0.0 (2023-03-02)
 
 
