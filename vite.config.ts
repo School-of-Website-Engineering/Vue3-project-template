@@ -7,7 +7,17 @@ import Components from 'unplugin-vue-components/vite';
 import {ElementPlusResolver, NaiveUiResolver} from 'unplugin-vue-components/resolvers';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
-function defineConfig({command, mode}) {
+// 接口定义
+interface ViteConfigOptions {
+    command: 'build' | 'serve';
+    mode: string;
+}
+interface DefineConfigOptions {
+    command: 'build' | 'serve';
+    mode: string;
+}
+
+function defineConfig({ command, mode }: DefineConfigOptions) {
     // 获取环境变量
     // 以下env配置是为了在代码中可以直接使用process.env.NODE_ENV,loadEnv是vite提供的一个方法，可以获取到环境变量
     const env: Partial<Record<string, string>> = loadEnv(mode, process.cwd());
@@ -55,7 +65,7 @@ function defineConfig({command, mode}) {
                 '/api': {
                     target      : 'http://localhost:3001',
                     changeOrigin: true,
-                    rewrite     : (path) => path.replace(/^\/api/, '')
+                    rewrite: (path: string) => path.replace(/^\/api/, '')
                 }
             }
         },
@@ -81,5 +91,4 @@ function defineConfig({command, mode}) {
         }
     };
 }
-
-export default ({command, mode}) => defineConfig({command, mode});
+export default ({ command, mode }: ViteConfigOptions) => defineConfig({ command, mode });

@@ -28,8 +28,12 @@
 
 <script lang="ts" setup>
 import { reactive, ref } from 'vue';
-
-const labelPosition = ref('top');
+enum LabelPosition {
+	Top = 'top',
+	Left = 'left',
+	Right = 'right'
+}
+const labelPosition = ref(LabelPosition.Left);
 
 const formLabelAlign = reactive({
     name  : '',
