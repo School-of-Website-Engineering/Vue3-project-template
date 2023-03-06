@@ -1,4 +1,7 @@
-![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E7%BB%B4%E6%8A%A4%E4%B8%AD-brightgreen)<!--![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%B0%B1%E7%BB%AA-orange)-->
+<!-- ![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E7%BB%B4%E6%8A%A4%E4%B8%AD-brightgreen) -->
+<!--![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%B0%B1%E7%BB%AA-orange)-->
+
+![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E7%BB%B4%E6%8A%A4%E4%B8%AD-brightgreen)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![](https://img.shields.io/crates/l/s)](https://img.shields.io/crates/l/s)
 ![](https://img.shields.io/badge/Vue-%5E3.2.47-success)
@@ -6,10 +9,9 @@
 ![](https://img.shields.io/badge/Vite-%20%5E4.1.4-brightgreen)
 ![](https://img.shields.io/badge/npm-%5E9.5.1-blue)
 
-## 内容列表
+ <h2>内容列表</h2>
 
-- [内容列表](#内容列表)
-  - [Git 规范](#git-规范)
+- [Git 规范](#git-规范)
   - [Git 分支命名](#git-分支命名)
 - [Git Commit Message 格式](#git-commit-message-格式)
   - [type 提交类型：](#type-提交类型)
@@ -22,7 +24,7 @@
   - [特别感谢：](#特别感谢)
 - [使用许可](#使用许可)
 
-### Git 规范
+## Git 规范
 
 ### Git 分支命名
 
