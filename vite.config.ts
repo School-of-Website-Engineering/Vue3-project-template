@@ -7,6 +7,7 @@ import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver, NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import viteCompression from 'vite-plugin-compression';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 // 接口定义
 interface ViteConfigOptions {
@@ -23,6 +24,8 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
     // 获取环境变量
     // 以下env配置是为了在代码中可以直接使用process.env.NODE_ENV,loadEnv是vite提供的一个方法，可以获取到环境变量
     const env: Partial<Record<string, string>> = loadEnv(mode, process.cwd());
+    const isProduction: boolean = mode === 'production';
+    // 获取当前环境变量，生产环境为production，开发环境为development
     return {
         plugins: [
             vue(),
@@ -48,7 +51,12 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
             // 还可配置entry入口文件， inject自定义注入数据等
             createHtmlPlugin(),
             // 开启gzip压缩
-            viteCompression()
+            viteCompression({
+                // 配置压缩文件的大小>1kb
+                threshold: 1024
+            }),
+            // 打包分析
+            visualizer()
         ],
         base: '/Vue3-project-template/',
         css : {
@@ -97,8 +105,8 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
             terserOptions: {
                 compress: {
                     keep_infinity: true, // 防止 Infinity 被压缩成 1/0，这可能会导致 Chrome 上的性能问题
-                    drop_console : env.VITE_BUILD_DROP_CONSOLE === 'true', // 去除 console
-                    drop_debugger: true // 去除 debugger
+                    drop_console : isProduction && env.VITE_BUILD_DROP_CONSOLE === 'true', // 去除 console
+                    drop_debugger: isProduction // 去除 debugger
                 }
             },
             chunkSizeWarningLimit: 1500 // chunk 大小警告的限制（以 kbs 为单位）
