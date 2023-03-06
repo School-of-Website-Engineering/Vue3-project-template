@@ -25,7 +25,7 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
     // 以下env配置是为了在代码中可以直接使用process.env.NODE_ENV,loadEnv是vite提供的一个方法，可以获取到环境变量
     const env: Partial<Record<string, string>> = loadEnv(mode, process.cwd());
     const isProduction: boolean = mode === 'production';
-    // 获取当前环境变量，生产环境为production，开发环境为development
+    console.log('env', env);
     return {
         plugins: [
             vue(),
