@@ -1,20 +1,22 @@
-import {loadEnv} from 'vite';
+import { loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
-import {ElementPlusResolver, NaiveUiResolver} from 'unplugin-vue-components/resolvers';
+import { ElementPlusResolver, NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import { createHtmlPlugin } from 'vite-plugin-html';
+import viteCompression from 'vite-plugin-compression';
 
 // 接口定义
 interface ViteConfigOptions {
-    command: 'build' | 'serve';
-    mode: string;
+  command: 'build' | 'serve';
+  mode: string;
 }
+
 interface DefineConfigOptions {
-    command: 'build' | 'serve';
-    mode: string;
+  command: 'build' | 'serve';
+  mode: string;
 }
 
 function defineConfig({ command, mode }: DefineConfigOptions) {
@@ -32,7 +34,7 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
                 // 指定生成的 d.ts 文件位置与文件名
                 dts      : './src/auto-imports.d.ts',
                 // 配置开启 eslint
-                eslintrc : {enabled: true},
+                eslintrc : { enabled: true },
                 resolvers: [ElementPlusResolver()]
             }),
             Components({
@@ -44,7 +46,9 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
             }),
             // 默认会向 index.html 注入 .env 文件的内容，类似 vite 的 loadEnv函数
             // 还可配置entry入口文件， inject自定义注入数据等
-            createHtmlPlugin()
+            createHtmlPlugin(),
+            // 开启gzip压缩
+            viteCompression()
         ],
         base: '/Vue3-project-template/',
         css : {
@@ -70,9 +74,9 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
             }
         },
         // resolve是一个对象，里面有一个alias属性，用来配置路径别名,这里配置了@指向src目录
-        resolve: {alias: {'@': path.resolve(__dirname, 'src')}},
+        resolve: { alias: { '@': path.resolve(__dirname, 'src') } },
         // 配置全局变量,这里配置了process.env.NODE_ENV,这样在代码中就可以直接使用process.env.NODE_ENV了
-        define : {'process.env': env},
+        define : { 'process.env': env },
         // build是一个对象，里面有一个outDir属性，用来配置打包后的文件夹名称
         build  : {
             outDir       : 'dist', // 指定打包路径，默认为项目根目录下的 dist 目录
@@ -80,6 +84,16 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
             // minify默认esbuild，esbuild模式下terserOptions将失效
             // vite3变化：Terser 现在是一个可选依赖，如果你使用的是 build.minify: 'terser'，你需要手动安装它 `npm add -D terser`
             minify       : 'terser',
+            rollupOptions: {
+                output: {
+                    manualChunks: (id: string) => {
+                        // 将 node_modules 中的代码单独打包成一个 JS 文件
+                        if (id.includes('node_modules')) {
+                            return 'vendor';
+                        }
+                    }
+                }
+            },
             terserOptions: {
                 compress: {
                     keep_infinity: true, // 防止 Infinity 被压缩成 1/0，这可能会导致 Chrome 上的性能问题
@@ -91,4 +105,5 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
         }
     };
 }
+
 export default ({ command, mode }: ViteConfigOptions) => defineConfig({ command, mode });
