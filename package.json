@@ -60,7 +60,8 @@
       "eslint --fix"
     ],
     "*.{less,css}": [
-      "prettier --write"
+      "prettier --write",
+      "eslint --fix"
     ]
   }
 }
