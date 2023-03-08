@@ -1,6 +1,10 @@
 import { defineStore } from 'pinia';
 
 export const useUserStore = defineStore('user', {
+    // 开启数据缓存
+    persist: {
+        storage: sessionStorage
+    },
     // id: 'user', // id必填，且需要唯一。两种写法
     state: () => {
         return {
@@ -8,7 +12,10 @@ export const useUserStore = defineStore('user', {
         };
     },
     getters: {
-        nameLength: (state) => state.name.length
+        nameLength: (state) => state.name.length,
+        fullName  : (state) => {
+            return state.name + '丰';
+        }
     },
     actions: {
         updateName(name: string) {
