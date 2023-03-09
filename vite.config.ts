@@ -11,13 +11,13 @@ import { visualizer } from 'rollup-plugin-visualizer';
 
 // 接口定义
 interface ViteConfigOptions {
-  command: 'build' | 'serve';
-  mode: string;
+    command: 'build' | 'serve';
+    mode: string;
 }
 
 interface DefineConfigOptions {
-  command: 'build' | 'serve';
-  mode: string;
+    command: 'build' | 'serve';
+    mode: string;
 }
 
 function defineConfig({ command, mode }: DefineConfigOptions) {
@@ -73,10 +73,10 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
             strictPort: false,
             open      : true,
             proxy     : {
-                '/api': {
-                    target      : 'http://localhost:3001',
+                '/api-dev': {
+                    target      : 'http://www.weather.com.cn',
                     changeOrigin: true,
-                    rewrite     : (path: string) => path.replace(/^\/api/, '')
+                    rewrite     : (path: string) => path.replace(/^\/api-dev/, '')
                 }
             }
         },

@@ -5,7 +5,7 @@ export const useUserStore = defineStore('user', {
     persist: {
         storage: sessionStorage
     },
-    // id: 'user', // id必填，且需要唯一。两种写法
+    // id: 'demo', // id必填，且需要唯一。两种写法
     state: () => {
         return {
             name: '张三'
