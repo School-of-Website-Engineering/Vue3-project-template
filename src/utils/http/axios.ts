@@ -15,6 +15,7 @@ const service = axios.create({
 
 // axios实例拦截请求
 service.interceptors.request.use(
+    // @ts-expect-error Type 'string' is not assignable to type
     (config: AxiosRequestConfig) => {
         config.headers = {
             ...config.headers
