@@ -77,6 +77,11 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
                     target      : 'http://www.weather.com.cn',
                     changeOrigin: true,
                     rewrite     : (path: string) => path.replace(/^\/api-dev/, '')
+                },
+                '/api-pro': {
+                    target      : 'http://www.weather.com.cn',
+                    changeOrigin: true,
+                    rewrite     : (path: string) => path.replace(/^\/api-pro/, '')
                 }
             }
         },
