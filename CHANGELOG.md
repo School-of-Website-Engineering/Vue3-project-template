@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/School-of-Website-Engineering/Vue3-project-template/compare/v1.2.0...v1.2.1) (2023-03-10)
+
+
+### update
+
+* 更新axios ([806da97](https://github.com/School-of-Website-Engineering/Vue3-project-template/commit/806da979feecdc7aad71c14b03da1a4174dcfd32))
+
 ## [1.2.0](https://github.com/School-of-Website-Engineering/Vue3-project-template/compare/v1.1.0...v1.2.0) (2023-03-06)
 
 
