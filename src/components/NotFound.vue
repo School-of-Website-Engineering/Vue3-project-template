@@ -12,7 +12,7 @@
 
 <script>
 import { reactive } from 'vue';
-import WeatherService from '@/api/weather/weatherApi';
+import WeatherService from '@/api/test/testApi.ts'; // 引入WeatherService
 
 export default {
     name: 'NotFound',
@@ -28,7 +28,7 @@ export default {
         // 通过调用WeatherService.getWeather()方法获取天气数据//使用async/await
         const getWeather = async() => {
             const weather = await WeatherService.getWeatherNow();
-            console.log(weather);
+            console.log(weather.weatherinfo);
         };
         getWeather();
         return { letters, animate, animated };
