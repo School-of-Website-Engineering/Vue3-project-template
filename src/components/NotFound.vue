@@ -12,8 +12,7 @@
 
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import WeatherService from '@/api/test/testApi'; // 引入WeatherService
-
+import WeatherService from '@/api/test/index'; // 引入WeatherService
 const letters = ['4', '0', '4'];
 const animated = reactive([false, false, false]);
 const animate = () => {
