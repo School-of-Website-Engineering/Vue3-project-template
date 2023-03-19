@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/School-of-Website-Engineering/Vue3-project-template/compare/v1.2.1...v1.2.2) (2023-03-19)
+
+
+### CI
+
+* Add .deepsource.toml ([704c9d1](https://github.com/School-of-Website-Engineering/Vue3-project-template/commit/704c9d1fee382cc71805450dceddd6b166555809))
+
 ## [1.2.1](https://github.com/School-of-Website-Engineering/Vue3-project-template/compare/v1.2.0...v1.2.1) (2023-03-10)
 
 
