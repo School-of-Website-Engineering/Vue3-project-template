@@ -7,25 +7,25 @@ import router from '@/router';
 // 创建axios实例
 const service = axios.create({
     // 根据不同env设置不同的baseURL
-    baseURL          : import.meta.env.VITE_APP_API_BASE_URL,
-    timeout          : 15000,
-    responseType     : 'json',
+    baseURL: import.meta.env.VITE_APP_API_BASE_URL,
+    timeout: 15000,
+    responseType: 'json',
     transformResponse: [
-        function(data) {
+        function (data) {
             try {
                 data = JSON.parse(data);
             } catch (e) {
                 console.log(e);
             }
             return data;
-        }
-    ]
+        },
+    ],
 });
 // axios实例拦截请求
 service.interceptors.request.use(
     (config: AxiosRequestConfig | any) => {
         config.headers = {
-            ...config.headers
+            ...config.headers,
             // ...auth.headers()
             // 自定义headers，如token等
         };
@@ -33,7 +33,7 @@ service.interceptors.request.use(
     },
     (error: AxiosError) => {
         return Promise.reject(error);
-    }
+    },
 );
 
 // axios实例拦截响应
@@ -75,7 +75,7 @@ class DefaultErrorHandler implements ErrorHandler {
 const errorHandlers: Record<number, ErrorHandler> = {
     0: new DefaultErrorHandler(),
     1: new TokenExpiredErrorHandler(),
-    2: new NoPermissionErrorHandler()
+    2: new NoPermissionErrorHandler(),
 };
 
 // 响应拦截器

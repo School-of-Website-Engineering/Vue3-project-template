@@ -46,8 +46,8 @@ enum LabelPosition {
 const labelPosition = ref(LabelPosition.Left);
 
 const formLabelAlign = reactive({
-    name  : '',
-    region: ''
+    name: '',
+    region: '',
 });
 </script>
 

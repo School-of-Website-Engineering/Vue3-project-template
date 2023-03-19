@@ -21,7 +21,7 @@ const animate = () => {
     });
 };
 // 通过调用WeatherService.getWeather()方法获取天气数据//使用async/await
-const getWeather = async() => {
+const getWeather = async () => {
     const weather = await WeatherService.getWeatherNow();
     console.log(weather.weatherinfo);
 };

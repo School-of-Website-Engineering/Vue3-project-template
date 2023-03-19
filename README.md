@@ -1,4 +1,5 @@
 # Vue3-project-template
+
 <!-- ![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E7%BB%B4%E6%8A%A4%E4%B8%AD-brightgreen) -->
 <!--![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%B0%B1%E7%BB%AA-orange)-->
 <!--![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%AE%8C%E6%88%90-brightgreen)-->
@@ -11,27 +12,26 @@
 ![](https://img.shields.io/badge/Vite-%20%5E4.1.4-brightgreen)
 ![](https://img.shields.io/badge/npm-%5E9.5.1-blue)
 
-
 ## 项目简介
 
 Vue3-project-template 为了方便开发者快速搭建 Vue3 项目，提供了一个基础的 Vue3 项目模板，该模板集成了 Vue3、Vite、Vue-router、Vuex、Element-plus、Axios、Eslint、Prettier、Commitizen、Commitlint、Husky、Lint-staged 等常用的工具，开发者只需要在该模板上进行开发即可。
 
  <h2>内容列表</h2>
 
-- [Vue3-project-template](#vue3-project-template)
-  - [项目简介](#项目简介)
-  - [Git 规范](#git-规范)
-    - [Git 分支命名](#git-分支命名)
-  - [Git Commit Message 格式](#git-commit-message-格式)
-    - [type 提交类型：](#type-提交类型)
-    - [subject 提交描述](#subject-提交描述)
-  - [相关仓库](#相关仓库)
-  - [维护者](#维护者)
-  - [如何贡献](#如何贡献)
-    - [贡献者](#贡献者)
-  - [快速上手](#快速上手)
-    - [特别感谢：](#特别感谢)
-  - [使用许可](#使用许可)
+-   [Vue3-project-template](#vue3-project-template)
+    -   [项目简介](#项目简介)
+    -   [Git 规范](#git-规范)
+        -   [Git 分支命名](#git-分支命名)
+    -   [Git Commit Message 格式](#git-commit-message-格式)
+        -   [type 提交类型：](#type-提交类型)
+        -   [subject 提交描述](#subject-提交描述)
+    -   [相关仓库](#相关仓库)
+    -   [维护者](#维护者)
+    -   [如何贡献](#如何贡献)
+        -   [贡献者](#贡献者)
+    -   [快速上手](#快速上手)
+        -   [特别感谢：](#特别感谢)
+    -   [使用许可](#使用许可)
 
 ## Git 规范
 
