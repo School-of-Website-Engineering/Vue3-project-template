@@ -11,10 +11,17 @@
 ![](https://img.shields.io/badge/Vite-%20%5E4.1.4-brightgreen)
 ![](https://img.shields.io/badge/npm-%5E9.5.1-blue)
 
+---
+DeepSource 趋势线：
+
+[![DeepSource](https://deepsource.io/gh/School-of-Website-Engineering/Vue3-project-template.svg/?label=active+issues&show_trend=true&token=y_ZjbP8TmVGwwkuKPdl67NZO)](https://deepsource.io/gh/School-of-Website-Engineering/Vue3-project-template/?ref=repository-badge)
+
+---
 
 ## 项目简介
 
 Vue3-project-template 为了方便开发者快速搭建 Vue3 项目，提供了一个基础的 Vue3 项目模板，该模板集成了 Vue3、Vite、Vue-router、Vuex、Element-plus、Axios、Eslint、Prettier、Commitizen、Commitlint、Husky、Lint-staged 等常用的工具，开发者只需要在该模板上进行开发即可。
+
 
  <h2>内容列表</h2>
 
@@ -124,6 +131,17 @@ npm run build
 ```
 
 执行命令后会得到 dist 目录，可以放到自己的 web 服务器指定的路径下，然后访问即可。
+
+或者运行:
+```
+npm run preview
+```
+进行生产预览
+
+---
+**注意事项：**
+
+如果出现`"cygpath: command not found" when commiting to branch`错误，请添加你的Path环境变量:`C:\Program Files\Git\usr\bin`，更多信息请参考["cygpath: command not found" when commiting to branch #10326](https://github.com/desktop/desktop/issues/10326)
 
 ---
 

@@ -23,7 +23,7 @@ export interface AddressInfo {
 }
 
 class UserService implements UserApi {
-    login(data: LoginParams): Promise<string> {
+    login(data: LoginParams): Promise<Response> {
         return http.post(USER_LOGIN, data);
     }
 
@@ -34,16 +34,16 @@ class UserService implements UserApi {
     logout(): Promise<void> {
         return http.post(USER_LOGOUT);
     }
-    getAddress(userId: number): Promise<AddressInfo> {
+    getAddress(userId: number): Promise<Response> {
         return http.get(USER_ADDRESS, { params: { userId } });
     }
 }
 
 export interface UserApi {
-    login(data: LoginParams): Promise<string>;
+    login(data: LoginParams): Promise<Response>;
     getInfo(): Promise<UserInfo>;
     logout(): Promise<void>;
-    getAddress(userId: number): Promise<AddressInfo>;
+    getAddress(userId: number): Promise<Response>;
 }
 
 export default new UserService();
