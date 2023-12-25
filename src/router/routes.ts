@@ -3,10 +3,10 @@ import { RouteRecordRaw } from 'vue-router';
 
 export const routes: Array<RouteRecordRaw> = [
     // 重定向
-    // {
-    //     path    : '/',
-    //     redirect: '/login'
-    // },
+    {
+        path    : '/',
+        redirect: '/login'
+    },
     // 登录
     // 登录
     {

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>XIAON机场——我的邀请</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="keywords" content="XIAON机场,XIAON机场加速器，XIAON机场浏览器，13xVPN，小黑牛VPN，小黑牛加速器，佛跳墙VPN，佛跳墙加速器，外网VPN，外网加速器，旋风VPN，旋风加速器，老王VPN，老王加速器，蓝灯VPN，蓝灯加速器，雷霆VPN，雷霆加速器，天行VPN，天行加速器，神灯VPN，神灯加速器，蚂蚁VPN，蚂蚁加速器，坚果VPN，坚果加速器">
+   <meta name="description" content="XIAON机场">
+    
+    <!-- Canonical links -->
+    <link rel="canonical" href=" /index.html">
+    <!-- Alternative links -->
+    <link rel="alternative" hreflang="en" href=" /index.html">
+    <link rel="alternative" hreflang="zh-CN" href=" /index.html">
+      
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+    <!-- 宽度大于 900px 的屏幕使用该样式 -->
+    <link rel="stylesheet" media="screen and (min-width: 451px)" href="./static/liteboardpc.css">
+    <!-- 宽度小于或等于 600px 的屏幕使用该样式 -->
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="./static/liteboardwap.css">
+    <link rel="stylesheet" href="./static/jiazai.css">
+    <script type="text/javascript" src="./static/iframe.js"></script>
+    <script type="text/javascript" src="./static/invite.js"></script>
+  </head>
+
+<body class="top" style="background-color: #ffffff;" onload="bootcheck()">
+
+ 
+
+<!--End of Tawk.to Script-->
+<div class="head" >
+  <div class="head_width">
+    <div class="head_box_img">
+      <img src="./img/head.jpg" class="head_img element" onclick='window.location.href="./homepage.html"'></img>
+    </div>
+    <div class="head_sculpture element" onclick="openlogout()">
+        <img src="./img/person.png" class="head_login element"></img>
+        <p>退出登录</p>
+      </div>
+  </div>
+</div>
+
+<!--顶部灰色-->
+<div class="background_gary">
+  <div class="sub_width">
+    <div class="sub_left">
+      <p class="gary_p">XIAON机场</p>
+    </div>
+  </div>
+</div>
+
+<div class="fatherbox">
+  <!--菜单-->
+  <div class="menubox">
+     <p class="menutitle element">菜单选项<img class="menubox_icon_xia"src="./img/xia.svg" id="openmenu" onclick=openmenu()><img class="menubox_icon_shang"src="./img/shang.svg"  id="closemenu" onclick="closemenu()"></p>
+     <ul class="menulistul" id="menulistul">
+      <a href="./homepage.html"><li class="lilist" id="icon1"><p class="menulist">仪表台</p></li></a>
+      <a href="./download.html"><li class="lilist" id="icon2"><p class="menulist">应用下载</p></li></a>
+      <a href="./shop.html"><li class="lilist" id="icon3"><p class="menulist">购买订阅</p></li></a>
+      <a href="./sanfang.html"><li class="lilist" id="icon4"><p class="menulist">配置订阅链接</p></li></a>
+      <a href="./node.html"><li class="lilist" id="icon5"><p class="menulist">节点状态</p></li></a>
+      <a href="./order.html"><li class="lilist" id="icon6"><p class="menulist">我的订单</p></li></a>
+      <a href="./invite.html"><li class="lilist  choose" id="icon7"><p class="menulist">邀请好友</p></li></a>
+      <a href="./setting.html"><li class="lilist" id="icon8"><p class="menulist">个人设置</p></li></a>
+      <a href="./liuliang.html"><li class="lilist" id="icon9"><p class="menulist">流量明细</p></li></a>
+      <a href="./ticket.html"><li class="lilist" id="icon10"><p class="menulist">我的工单</p></li></a>
+     </ul>
+  </div>
+
+   <!--右侧内容-->
+   <div class="neirongright">
+
+    
+    <div class="invite" >
+      <p class="itemtitle"style="margin-top: 10px;" >我的邀请</p>
+      <div class="invite_down">
+        <p class="invite_big_amount" id="invite_big_amount">¥0</p>
+        <p class="invite_des">当前佣金余额</p>
+        <div class="invite_button_group">
+          <button class="invite_get_amount element" onclick="openhuazhuanbox()">
+            转到余额
+          </button>
+          <button class="invite_get_cash element" style="display:none" id="invite_get_cash" onclick="opentixianbox()">
+            提取现金
+          </button>
+        </div>
+      </div>  
+
+      <div class="invite_down" style="margin-top: 20px;">
+        <div class="invite_des_group">
+          <p class="invite_des">已注册用户数:</p>
+          <p class="invite_des" id="invite_renshu">0人</p>
+        </div>
+
+        <div class="invite_des_group">
+          <p class="invite_des">佣金比例:</p>
+          <p class="invite_des" id="invite_yongjinbili">0%</p>
+        </div>
+
+        <div class="invite_des_group">
+          <p class="invite_des">确认中的佣金:</p>
+          <p class="invite_des" id="invite_querenzhong">¥0</p>
+        </div>
+
+        <div class="invite_des_group">
+          <p class="invite_des">累计获得佣金:</p>
+          <p class="invite_des" id="invite_leiji">¥0</p>
+        </div>
+      </div>  
+    </div>
+
+    <div class="invite" id="invite_codes">
+      <div class="titlegroup">
+        <p class="itemtitle" style="margin-top: 40px;">邀请码</p>
+        <button class="invite_tianjia element" onclick = "addinvitecode()">添加邀请码</button>
+      </div>
+      
+      <!--
+      <div class="invite_code_down ticket_box">
+          <div class="invite_code_words_groups">
+            <p class="invite_code">XXXXX</p>
+            <button class="invite_code_copy">复制链接</button>
+          </div>
+          <p class="invite_code_creattime">2022/12/12 23:22:22</p>      
+      </div> 
+      --> 
+      <div id="saoguang_box">
+        <div class="saoguang_outline">
+          <div class="sweep-light"></div>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
+<!--页尾-->
+  <div class="yewei">
+    <div class="yewei_width">
+      <p class="subtile" style="text-align:center;">
+        有问题? 请加入</br>
+        <a href="https://t.me/xiaonjc"><font color="#0360DF">Telegram群组</font></a>
+      </p>
+      <div>
+
+        <div class="yewei_link">
+        </div>
+        <p class="des" style="margin-top: 0px; margin-bottom: 20px; font-size: 14px;">Copyright @ 2023 XIAON机场</p>
+      </div>
+    </div>
+  </div>
+
+    <!--划转弹窗-->
+    <div class="tanbox-huazhuan-zhezhao" id="tanhuazhuan" onclick="closehuazhuanbox()" style="display:none">
+      <div class="tanbox-huazhuan"  onclick="event.stopPropagation()">
+        <p class="tanbox-huazhuan-title">划转佣金至余额</p>
+        <div class="tanbox-huazhuan-down">
+          <div class="tanbox-huazhuan-des">划转后的余额仅用于XIAON机场消费使用</div>
+          <div class="tanbox-huazhuan-input">
+            <input class="inputbox" type="text" placeholder="请输入您要划转的金额" id="huazhuaninput">
+            <button class="inbutbutton_huazhua element" id="inbutbutton_huazhua" onclick="putall(this.value)">全部金额</button>
+          </div>
+        </div>
+        <div class="huazhuan_button_group">
+          <button class="huazhuan_tan_button element" onclick = "addhuazhuan()">确认</button>
+          <button class="huazhuan_tan_button_quxiao element" onclick="closehuazhuanbox()">取消</button>
+        </div>
+      </div>
+    </div> 
+
+        <!--提现弹窗-->
+    <div class="tanbox-huazhuan-zhezhao" id="tantixian" onclick="closetixianbox()"style="display:none" >
+      <div class="tanbox-huazhuan"  onclick="event.stopPropagation()">
+        <p class="tanbox-huazhuan-title">申请提现</p>
+        <div class="tanbox-huazhuan-down">
+            <select class="inputbox-tixian-list" type="text" id="tixianlist" style="display: block;">
+              <!--<option>@iubridge.com</option>-->
+            </select>
+            <input class="inputbox-tixian" type="text" placeholder="请输入您的提现账号" id="tiixaninput">
+        </div>
+        <div class="huazhuan_button_group">
+          <button class="huazhuan_tan_button element" onclick = "addtixian()">确认</button>
+          <button class="huazhuan_tan_button_quxiao element" onclick="closetixianbox()">取消</button>
+        </div>
+      </div>
+    </div> 
+
+
+  <div class="tanbox-right" id='tanright' style="display: none;"></div>
+  <!--错误弹窗-->
+  <div class="tanbox-cuowu" id='tancuowu' style="display: none;" ></div>
+  <!--加载动画-->
+  <div class="tanbox-jiazai" id='tanjiazai'style="display: none;" ><div class="loader"></div></div> 
+
+  <!--退出弹窗-->
+  <div class="tanbox-tuichu" id="tantuichu" style="display: none;">
+    <img src="./img/person.png" class="logout_img">
+    <p class="logout_words" id="logout_words">XIAON机场</p>
+    <div class="btn logout_button_btn">
+      <button class="logout_button elemen elementt" onclick="exitlogout()">退出登录</button>
+    <button class="logout_button logout_button_quxiao element element" onclick="closelogout()">取消</button>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
