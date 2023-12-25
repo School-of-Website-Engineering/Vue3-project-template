@@ -1,11 +1,11 @@
-@import"../scss/color";
+@import '../scss/color';
 $content-width: 1226px;
 $component-height: 32px;
 
-$font-family-medium: 'PingFangSC-Medium', Helvetica, Tahoma, Arial, 'Microsoft YaHei',
-    'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
-$font-family-regular: 'PingFangSC-Regular', Helvetica, Tahoma, Arial, 'Microsoft YaHei',
-    'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+$font-family-medium: 'PingFangSC-Medium', Helvetica, Tahoma, Arial, 'Microsoft YaHei', 'Hiragino Sans GB',
+    'WenQuanYi Micro Hei', sans-serif;
+$font-family-regular: 'PingFangSC-Regular', Helvetica, Tahoma, Arial, 'Microsoft YaHei', 'Hiragino Sans GB',
+    'WenQuanYi Micro Hei', sans-serif;
 
 @mixin font-class($fontFamily, $fontSize, $fontColor, $isBold) {
     font-family: $fontFamily;
@@ -33,4 +33,3 @@ $font-family-regular: 'PingFangSC-Regular', Helvetica, Tahoma, Arial, 'Microsoft
     top: 50%;
     transform: translate(-50%, -50%);
 }
-

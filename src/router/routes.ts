@@ -4,34 +4,34 @@ import { RouteRecordRaw } from 'vue-router';
 export const routes: Array<RouteRecordRaw> = [
     // 重定向
     {
-        path    : '/',
-        redirect: '/login'
+        path: '/',
+        redirect: '/login',
     },
     // 登录
     // 登录
     {
-        path     : '/login',
-        name     : 'login',
-        component: () => import('../views/Login/index.vue')
+        path: '/login',
+        name: 'login',
+        component: () => import('../views/Login/index.vue'),
     },
     {
         // 主页
-        path     : '/home',
-        name     : 'home',
+        path: '/home',
+        name: 'home',
         component: () => import('../components/Home/index.vue'),
-        children : [
+        children: [
             // 首页
             {
-                path     : '/index',
-                name     : 'index',
-                component: () => import('../components/Home/index.vue')
-            }
-        ]
+                path: '/index',
+                name: 'index',
+                component: () => import('../components/Home/index.vue'),
+            },
+        ],
     },
     //     404
     {
-        path     : '/:pathMatch(.*)*',
-        name     : 'not-found',
-        component: () => import('../components/NotFound.vue')
-    }
+        path: '/:pathMatch(.*)*',
+        name: 'not-found',
+        component: () => import('../components/NotFound.vue'),
+    },
 ];

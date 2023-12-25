@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-shadow: none;
@@ -31,14 +31,14 @@
     width: 1200px;
 }
 
-.head_box_img{
+.head_box_img {
     width: 154px;
     height: 100%;
     margin-left: 16px;
 }
 
 .head_img {
-   width: 80%;
+    width: 80%;
 }
 
 .head_sculpture {
@@ -58,7 +58,7 @@
     margin-bottom: 3px;
 }
 
-.head_sculpture p{
+.head_sculpture p {
     width: 100%;
     font-size: 12px;
     margin: 0;
@@ -68,7 +68,7 @@
 .background_gary {
     width: 100%;
     height: 48px;
-    background-color: #F9F9FA;
+    background-color: #f9f9fa;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -87,14 +87,14 @@
 }
 .gary_p {
     font-size: 14px;
-    color: #20133A;
+    color: #20133a;
     margin-left: 16px;
     font-weight: 600;
-    letter-spacing:-1.2px;
+    letter-spacing: -1.2px;
 }
 .yewei {
     margin-top: 30px;
-    background-color: #F9F9FA;
+    background-color: #f9f9fa;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@
 }
 .des {
     font-size: 16px;
-    color: #42414D;
+    color: #42414d;
     margin-top: 20px;
     margin-left: 16px;
     margin-right: 16px;
@@ -135,8 +135,8 @@
     color: #000;
 }
 .fatherbox {
-    background-size:100%;
-    background-repeat:no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -146,11 +146,11 @@
 .menubox {
     width: 100%;
 }
-.menubox_icon_xia{
+.menubox_icon_xia {
     width: 20px;
     margin-left: 10px;
 }
-.menubox_icon_shang{
+.menubox_icon_shang {
     width: 20px;
     margin-left: 10px;
     display: none;
@@ -186,7 +186,7 @@
     height: 30px;
     font-size: 30px;
 }
-.lilist>p{
+.lilist > p {
     width: 100px;
     font-size: 16px;
     font-weight: 400;
@@ -198,7 +198,7 @@
     height: 30px;
 }
 .menulist {
-    text-decoration:none;
+    text-decoration: none;
     color: #42435a;
     padding: 4px 8px;
     font-size: 16px;
@@ -209,8 +209,8 @@
     line-height: 24px;
     margin-left: 10px;
 }
-.menulist-choose{
-    text-decoration:none;
+.menulist-choose {
+    text-decoration: none;
     color: #42435a;
     padding: 4px 8px;
     font-size: 16px;
@@ -225,7 +225,7 @@
 .menutitle {
     margin-left: 16px;
     font-size: 18px;
-    color: #20133A;
+    color: #20133a;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 25px;
@@ -279,7 +279,7 @@
     margin-left: 10px;
     font-weight: 400;
 }
-.gonggao_down{
+.gonggao_down {
     margin-top: 10px;
     margin-left: 10px;
     display: flex;
@@ -331,11 +331,11 @@
     top: 50%;
     width: 340px;
     height: auto;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     z-index: 200;
-    color:#fff;
+    color: #fff;
     padding: 4px;
     box-shadow: 2px 2px 8px 4px rgba(153, 153, 153, 0.2);
     border-radius: 10px;
@@ -383,7 +383,7 @@
     align-items: flex-start;
     margin: 0 15px;
 }
-.btn{
+.btn {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -404,7 +404,7 @@
     color: #fff;
 }
 
-.jdzt{
+.jdzt {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -418,30 +418,29 @@
 }
 
 .css-button-3d--rose {
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #ff6392;
-  box-shadow: 0 5px #ff0a78;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ff6392;
+    box-shadow: 0 5px #ff0a78;
 }
 .css-button-3d--rose:hover {
-  box-shadow: 0 3px #ff0a78;
-  top: 1px;
+    box-shadow: 0 3px #ff0a78;
+    top: 1px;
 }
 .css-button-3d--rose:active {
-  box-shadow: 0 0 #ff0a78;
-  top: 5px;
+    box-shadow: 0 0 #ff0a78;
+    top: 5px;
 }
-
 
 .liuliang_down {
     width: 100%;
@@ -502,7 +501,7 @@
     border-bottom-left-radius: 10px;
 }
 
-.liuliang_des_2{
+.liuliang_des_2 {
     font-size: 14px;
     color: #20133a;
     font-weight: 600;
@@ -548,14 +547,14 @@
     border-radius: 100px;
 }
 
-.kuaijie_item{
+.kuaijie_item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.kuaijie_item_line{
+.kuaijie_item_line {
     height: 20px;
     width: 100%;
     border-style: solid;
@@ -571,40 +570,40 @@
 }
 
 .tanbox-right {
-    background-color: #DFF0D8;
+    background-color: #dff0d8;
     position: fixed;
     left: 50%;
     top: 35%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     z-index: 200;
-    color:#3C763D;
+    color: #3c763d;
     padding: 16px;
     box-shadow: 2px 2px 8px 4px rgba(153, 153, 153, 0.2);
     border-radius: 4px;
     text-align: center;
     border-style: solid;
-    border-color: #D6E9C6;
+    border-color: #d6e9c6;
     border-width: 1px;
 }
 
 .tanbox-cuowu {
-    background-color: #F6E8E8;
+    background-color: #f6e8e8;
     position: fixed;
     left: 50%;
     top: 35%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     z-index: 200;
-    color:#C4807E;
+    color: #c4807e;
     padding: 16px;
     box-shadow: 2px 2px 8px 4px rgba(153, 153, 153, 0.2);
     border-radius: 4px;
     text-align: center;
     border-style: solid;
-    border-color: #F1DCE0;
+    border-color: #f1dce0;
     border-width: 1px;
 }
 
@@ -615,11 +614,11 @@
     top: 50%;
     width: 60px;
     height: 60px;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     z-index: 200;
-    color:#fff;
+    color: #fff;
     padding: 10px;
     box-shadow: 2px 2px 8px 4px rgba(153, 153, 153, 0.2);
     border-radius: 10px;
@@ -632,11 +631,11 @@
     top: 50%;
     width: 320px;
     height: 220px;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     z-index: 200;
-    color:#fff;
+    color: #fff;
     padding: 4px;
     box-shadow: 2px 2px 8px 4px rgba(153, 153, 153, 0.2);
     border-radius: 4px;
@@ -652,7 +651,7 @@
     color: #000;
     margin-top: 10px;
 }
-.logout_button_btn{
+.logout_button_btn {
     height: 80px;
 }
 .logout_button {
@@ -667,8 +666,8 @@
 .logout_button_quxiao {
     background-color: #0060dfc2;
 }
-   
-.download_down{
+
+.download_down {
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -681,12 +680,12 @@
     align-items: center;
     justify-content: flex-start;
     box-shadow: 2px 2px 8px #0000002d;
-    padding:12px;
+    padding: 12px;
     margin-right: 0px;
     margin-bottom: 10px;
     border-radius: 8px;
     width: 100%;
-    text-decoration:none;
+    text-decoration: none;
 }
 .download_box_tuijian {
     display: flex;
@@ -694,16 +693,16 @@
     align-items: center;
     justify-content: flex-start;
     box-shadow: 2px 2px 8px #0000002d;
-    padding:12px;
+    padding: 12px;
     margin-right: 0px;
     margin-bottom: 10px;
     border-radius: 8px;
     width: 100%;
-    text-decoration:none;
+    text-decoration: none;
     background-image: url('../img/downloadtuijian.svg');
     background-repeat: no-repeat;
     background-position: top right;
-    background-size:50px 50px;
+    background-size: 50px 50px;
 }
 .download_logo {
     width: 50px;
@@ -726,7 +725,7 @@
     margin-left: 4px;
 }
 
-.shop_down{
+.shop_down {
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -740,7 +739,7 @@
     justify-content: flex-start;
     box-shadow: 2px 2px 8px #0000002d;
     padding: 6px;
-    
+
     margin-bottom: 20px;
     border-radius: 16px;
     width: 100%;
@@ -767,12 +766,12 @@
     border-color: #4176fa;
     box-sizing: border-box;
     background-image: url(../img/tuijian.svg);
-    background-repeat:no-repeat;
-    background-position:top right;
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 .shop_title {
     font-size: 28px;
-    color: #20133A;
+    color: #20133a;
     margin-top: 20px;
     margin-left: 16px;
     margin-right: 16px;
@@ -782,7 +781,7 @@
     letter-spacing: -1.2px;
 }
 
-.shop_price{
+.shop_price {
     color: #20133a;
     font-size: 40px;
     font-weight: 500;
@@ -794,7 +793,7 @@
 
 .shop_content {
     font-size: 16px;
-    color: #42414D;
+    color: #42414d;
     margin-top: 20px;
     margin-left: 16px;
     margin-right: 16px;
@@ -812,14 +811,14 @@
     border-radius: 4px;
 }
 .shop_meiyue {
-    color: #42414D;
+    color: #42414d;
     font-size: 14px;
     font-weight: 300;
     margin-top: 10px;
     margin-bottom: 2px;
 }
 
-.outline_down{
+.outline_down {
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -862,10 +861,10 @@
 .outline_box_link {
     color: #0060df;
     margin-right: 15px;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.sanfang_down{
+.sanfang_down {
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -910,7 +909,7 @@
 .sanfang_box_link {
     color: #0060df;
     margin-right: 10px;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .tan-qrcode {
@@ -920,11 +919,11 @@
     top: 50%;
     width: 256px;
     height: auto;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     z-index: 400;
-    color:#fff;
+    color: #fff;
     padding: 4px;
     box-shadow: 2px 2px 8px 4px rgba(153, 153, 153, 0.2);
     border-radius: 20px;
@@ -942,8 +941,7 @@
     z-index: 200;
 }
 
-
-.node_down{
+.node_down {
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -970,11 +968,11 @@
     margin-left: 10px;
     width: 50%;
 }
-.node_box_status{
+.node_box_status {
     width: 20px;
 }
 
-.node_box_rate{
+.node_box_rate {
     font-size: 14px;
     font-weight: 300;
     color: #20133a;
@@ -987,7 +985,7 @@
     line-height: 24px;
     border-color: #00000017;
 }
-.node_box_tag{
+.node_box_tag {
     font-size: 14px;
     font-weight: 300;
     color: #20133a;
@@ -1003,7 +1001,7 @@
     margin-right: 10px;
 }
 
-.order_down{
+.order_down {
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -1023,7 +1021,7 @@
     width: 100%;
 }
 
-.order_box_trade{
+.order_box_trade {
     font-size: 14px;
     font-weight: 400;
     color: #0060df;
@@ -1044,7 +1042,7 @@
     color: #42435a;
     margin-right: 10px;
 }
-.order_box_zhouqi{
+.order_box_zhouqi {
     font-size: 14px;
     font-weight: 300;
     color: #20133a;
@@ -1068,7 +1066,7 @@
     border-style: none;
 }
 
-.invite_down{
+.invite_down {
     width: 100%;
     height: auto;
     background-color: #ffffff;
@@ -1118,7 +1116,7 @@
     color: #42435a;
 }
 
-.invite_des_group{
+.invite_des_group {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1196,9 +1194,9 @@
     top: 50%;
     width: 350px;
     height: auto;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1223,8 +1221,8 @@
 }
 
 .tanbox-huazhuan-des {
-    background-color: #DFF0D8;
-    color:#3C763D;
+    background-color: #dff0d8;
+    color: #3c763d;
     margin-left: 10px;
     height: 40px;
     line-height: 40px;
@@ -1258,9 +1256,9 @@
     border-left-style: solid;
     border-bottom-style: solid;
     border-right-style: none;
-    color: #5F5F73;
+    color: #5f5f73;
     font-size: 14px;
-    outline-color: #0360DF;
+    outline-color: #0360df;
     margin-right: 0px;
 }
 
@@ -1279,7 +1277,7 @@
     border-left-style: none;
     border-bottom-style: solid;
     border-right-style: solid;
-    color: #0360DF;
+    color: #0360df;
 }
 
 .huazhuan_button_group {
@@ -1298,7 +1296,7 @@
     border-radius: 6px;
     border-style: none;
     background-color: #0060df;
-    color: #fff
+    color: #fff;
 }
 
 .huazhuan_tan_button_quxiao {
@@ -1329,9 +1327,9 @@
     border-left-style: solid;
     border-bottom-style: solid;
     border-right-style: solid;
-    color: #5F5F73;
+    color: #5f5f73;
     font-size: 16px;
-    outline-color: #0360DF;
+    outline-color: #0360df;
     margin-right: 0px;
 }
 
@@ -1348,9 +1346,9 @@
     border-color: #9e9e9e;
     border-image: none;
     border-style: solid;
-    color: #5F5F73;
+    color: #5f5f73;
     font-size: 16px;
-    outline-color: #0360DF;
+    outline-color: #0360df;
     margin-right: 0px;
 }
 
@@ -1398,7 +1396,7 @@
     height: 30px;
     border-style: none;
     border-radius: 6px;
-    background-color: #0360DF;
+    background-color: #0360df;
     color: #fff;
 }
 .chongzhi_dingyue {
@@ -1420,7 +1418,7 @@
     margin-bottom: 0px;
     font-weight: 400;
 }
-.set_des_group{
+.set_des_group {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1440,32 +1438,32 @@
     height: 45px;
 }
 
-.ticket_box_id{
+.ticket_box_id {
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
     color: #20133a;
     display: none;
 }
-.ticket_box_youxian{
+.ticket_box_youxian {
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
     color: #20133a;
     display: none;
 }
-.ticket_box_shijian{
+.ticket_box_shijian {
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
     color: #20133a;
     display: none;
 }
-.ticket_box_cancel{
+.ticket_box_cancel {
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
-    color: #0360DF;
+    color: #0360df;
     border-style: none;
     background-color: #fff;
 }
@@ -1474,14 +1472,14 @@
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
-    color: #0360DF;
+    color: #0360df;
     width: 190px;
     background-color: #fff;
     border-style: none;
     text-align: left;
 }
 
-.ticket_box_zhuangtai{
+.ticket_box_zhuangtai {
     font-size: 14px;
     font-weight: 300;
     color: #20133a;
@@ -1511,11 +1509,11 @@
     top: 50%;
     width: 360px;
     height: auto;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     z-index: 200;
-    color:#fff;
+    color: #fff;
     padding: 4px;
     box-shadow: 2px 2px 8px 4px rgba(153, 153, 153, 0.2);
     border-radius: 10px;
@@ -1525,7 +1523,7 @@
     align-items: center;
 }
 
-.tanbox-gongdan-down{
+.tanbox-gongdan-down {
     border-style: solid;
     border-width: 1px;
     border-color: #00000015;
@@ -1533,25 +1531,24 @@
     height: 300px;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
-    overflow-y:auto;
+    overflow-y: auto;
 }
 
 .tanbox-gongdan-title {
     font-size: 20px;
-    color: #20133a;;
+    color: #20133a;
     font-weight: 400;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 .gongdanzuo {
     font-size: 14px;
-    color: #20133a;;
+    color: #20133a;
     font-weight: 400;
     margin-top: 2px;
     margin-bottom: 10px;
     margin-left: 10px;
-    background-color: #E5F7D2;
+    background-color: #e5f7d2;
     height: auto;
     width: 220px;
     padding: 10px;
@@ -1560,7 +1557,7 @@
 }
 .gongdanyou {
     font-size: 14px;
-    color: #20133a;;
+    color: #20133a;
     font-weight: 400;
     margin-top: 2px;
     margin-bottom: 10px;
@@ -1585,7 +1582,7 @@
     align-items: flex-end;
 }
 
-.gongdanshijian{
+.gongdanshijian {
     font-size: 12px;
     color: #00000027;
     margin-top: 0px;
@@ -1609,7 +1606,6 @@
     border-width: 1px;
     border-color: #00000028;
     background-color: #00000005;
-    
 }
 .gongdan_send {
     width: 68px;
@@ -1623,7 +1619,7 @@
     border-top-style: none;
     border-right-style: solid;
     border-width: 1px;
-    background-color: #0360DF;
+    background-color: #0360df;
     color: #fff;
 }
 .tickettitlegroup {
@@ -1642,7 +1638,7 @@
     color: #fff;
 }
 
-.tanbox-ticket-down{
+.tanbox-ticket-down {
     border-style: none;
     width: 350px;
     height: 300px;
@@ -1661,7 +1657,7 @@
     font-size: 14px;
 }
 
-.tanbox_select_text{
+.tanbox_select_text {
     width: 100%;
     height: 35px;
     padding: 0px;
@@ -1680,7 +1676,7 @@
 .tanbox_textarea_text {
     width: 100%;
     height: 190px;
-    padding:0px;
+    padding: 0px;
     padding-left: 10px;
     padding-top: 10px;
     box-sizing: border-box;
@@ -1703,7 +1699,7 @@
 .ticket_send {
     width: 85px;
     height: 35px;
-    background-color:#0360DF ;
+    background-color: #0360df;
     border-style: none;
     border-radius: 6px;
     color: #fff;
@@ -1719,7 +1715,6 @@
     border-radius: 6px;
     color: #20133a;
     margin-left: 5px;
-
 }
 .shop_peizhi_down {
     width: 100%;
@@ -1762,14 +1757,14 @@
     padding: 0px;
     width: 88%;
     padding-left: 10px;
-    background-color: #21143B;
-    border-top-left-radius:6px;
-    border-bottom-left-radius:6px;
+    background-color: #21143b;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
     color: #fff;
-    -webkit-input-placeholder :#ffffffd5;
-    -moz-placeholder:#ffffffd5;
-    -moz-placeholder:#ffffffd5;
-    -ms-input-placeholder:#ffffffd5;
+    -webkit-input-placeholder: #ffffffd5;
+    -moz-placeholder: #ffffffd5;
+    -moz-placeholder: #ffffffd5;
+    -ms-input-placeholder: #ffffffd5;
 }
 .youhuiquanyanzheng {
     height: 50px;
@@ -1777,8 +1772,8 @@
     padding: 0px;
     width: 100px;
     background-color: #0060df;
-    border-top-right-radius:6px;
-    border-bottom-right-radius:6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
     margin: 0px;
     color: #fff;
 }
@@ -1791,7 +1786,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-.peizhi_jine_option{
+.peizhi_jine_option {
     width: 48%;
     height: 60px;
     background-color: #fff;
@@ -1805,7 +1800,7 @@
     justify-content: space-between;
     border-radius: 6px;
 }
-.peizhi_jine_option_choose{
+.peizhi_jine_option_choose {
     width: 48%;
     height: 60px;
     background-color: #fff;
@@ -1821,23 +1816,23 @@
     box-sizing: border-box;
     border-style: solid;
     border-width: 3px;
-    border-color: #0360DF;
+    border-color: #0360df;
 }
 .peizhi_jine_name {
     margin-left: 5px;
     font-size: 16px;
-    color: #21143B;
+    color: #21143b;
 }
-.peizhi_jine_price{
+.peizhi_jine_price {
     margin-right: 5px;
     font-size: 16px;
-    color: #21143B;
+    color: #21143b;
     font-weight: 500;
 }
 .shop_peizhi_zongji {
     width: 100%;
     height: auto;
-    background-color:#fff;
+    background-color: #fff;
     box-shadow: 2px 2px 8px #00000023;
     margin-top: 10px;
     border-radius: 6px;
@@ -1845,7 +1840,7 @@
     padding-bottom: 10px;
 }
 
-.zhekou_group_des{
+.zhekou_group_des {
     color: #42435a;
     font-size: 16px;
     margin-left: 10px;
@@ -1913,7 +1908,7 @@
     margin-right: 10px;
 }
 
-.jiahuaneirong_des{
+.jiahuaneirong_des {
     color: #42435a;
     font-size: 16px;
     margin-left: 10px;
@@ -1925,7 +1920,7 @@
     line-height: 40px;
 }
 
-.pay_img{
+.pay_img {
     width: 40px;
     margin-left: 10px;
     border-radius: 100px;
@@ -1948,15 +1943,15 @@
     font-size: 14px;
     margin-bottom: 10px;
     margin-top: 0px;
-    color: #42414D;
+    color: #42414d;
 }
-.status_group{
+.status_group {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.saoguang_shop{
+.saoguang_shop {
     width: 100%;
     height: 200px;
     line-height: 40px;
@@ -1968,7 +1963,7 @@
     margin-bottom: 10px;
     box-shadow: 2px 2px 8px #0000002a;
 }
-.saoguang_outline{
+.saoguang_outline {
     width: 100%;
     height: 60px;
     background: #ffffff;
@@ -1980,7 +1975,7 @@
     box-shadow: 2px 2px 8px #0000002a;
 }
 
-.sweep-light{
+.sweep-light {
     position: absolute;
     left: 0;
     right: 0;
@@ -2011,23 +2006,23 @@
 @-webkit-keyframes ball-scale {
     0% {
         -webkit-transform: scale(0);
-        transform: scale(0)
+        transform: scale(0);
     }
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
-        opacity: 0
+        opacity: 0;
     }
 }
 @keyframes ball-scale {
     0% {
         -webkit-transform: scale(0);
-        transform: scale(0)
+        transform: scale(0);
     }
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -2065,18 +2060,17 @@
     align-items: center;
     justify-content: flex-start;
 }
-.video-box-title{
+.video-box-title {
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 4px;
     font-size: 18px;
     color: #20133a;
 }
-.hotway{
+.hotway {
     font-size: 16px;
     text-decoration: none;
     color: #0060df;
-
 }
 .hotkeygroup {
     display: flex;
@@ -2106,7 +2100,7 @@
     flex-direction: row;
     align-items: center;
 }
-.gongdantishi-box{
+.gongdantishi-box {
     width: 100%;
     height: 40px;
     background-color: #ffefd1;
@@ -2116,12 +2110,12 @@
     flex-direction: row;
     align-items: center;
 }
-.tishi-words-1{
+.tishi-words-1 {
     text-decoration: none;
     margin-left: 10px;
     color: #74290e;
 }
-.tishi-words-2{
+.tishi-words-2 {
     text-decoration: none;
     margin-left: 10px;
     color: #855c0d;
