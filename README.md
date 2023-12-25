@@ -1,4 +1,5 @@
 # xiaon
+
 <!-- ![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E7%BB%B4%E6%8A%A4%E4%B8%AD-brightgreen) -->
 <!--![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%B0%B1%E7%BB%AA-orange)-->
 <!--![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%AE%8C%E6%88%90-brightgreen)-->
@@ -100,19 +101,24 @@ npm run build
 执行命令后会得到 dist 目录，可以放到自己的 web 服务器指定的路径下，然后访问即可。
 
 或者运行:
+
 ```
 npm run preview
 ```
+
 进行生产预览
 
 ---
+
 **注意事项：**
 
 如果出现`"cygpath: command not found" when commiting to branch`错误，请添加你的Path环境变量:`C:\Program Files\Git\usr\bin`，更多信息请参考["cygpath: command not found" when commiting to branch #10326](https://github.com/desktop/desktop/issues/10326)
 
 ---
+
 又或者出现“Github Desktop提交commit时找不到node_modules\”错误，通过手动将 …/AppData/Roaming/npm/node_modules 复制到 …AppData\Local\GitHubDesktop\app-2.6.0\resources\app\git\ 中来完成这项工作文件夹，之后就可以正常提交了。
 更多信息请参考[github desktop 提交commit时找不到node_modules\](https://blog.csdn.net/lh1234566/article/details/120180308)
+
 ```
 ---
 
@@ -139,3 +145,4 @@ JavaScript 和 Web 开发人员的最佳选择，具有几乎可支持任何编�
 ## 使用许可
 
 [Apache License 2.0](LICENSE) © Richard Littauer
+```
