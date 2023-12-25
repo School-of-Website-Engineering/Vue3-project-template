@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Vue3-project-template/sw.js', { scope: '/Vue3-project-template/' })})}
