@@ -2,10 +2,9 @@
 
 ## [1.2.3](https://github.com/School-of-Website-Engineering/Vue3-project-template/compare/v1.2.2...v1.2.3) (2023-12-25)
 
-
 ### update
 
-* 更新目录结构 ([c660d0a](https://github.com/School-of-Website-Engineering/Vue3-project-template/commit/c660d0ad394278fdff51c6fbf43971e4022557fc))
+-   更新目录结构 ([c660d0a](https://github.com/School-of-Website-Engineering/Vue3-project-template/commit/c660d0ad394278fdff51c6fbf43971e4022557fc))
 
 ## [1.2.2](https://github.com/School-of-Website-Engineering/Vue3-project-template/compare/v1.2.1...v1.2.2) (2023-03-19)
 
